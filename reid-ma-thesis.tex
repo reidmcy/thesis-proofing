@@ -14,6 +14,7 @@
 \usepackage{wasysym}
 \usepackage{geometry}
 \usepackage{ragged2e}
+\usepackage{appendix}
 \usepackage[table]{xcolor} 
 \usepackage[group-separator={,}, round-mode = places, round-precision = 2]{siunitx}
 
@@ -43,8 +44,8 @@
 	\vspace{3cm}
 	{\huge\bfseries Masters in Computational\\Social Science\par}
 	\vspace{5cm}
-	{ Reid Harry McIlroy-Young\par}
-	{ June, 2018\par}
+	{Reid Harry McIlroy-Young\par}
+	{June, 2018\par}
 	
 	\vfill
 	{\itshape ,\par}
@@ -53,13 +54,8 @@
 	Dr.~ \textsc{James A. Evans}\\
 	Preceptor: \textsc{Joshua Mausolf}
 	
-	
 	\vfill
-	
-	% Bottom of the page
-	{A paper
-		submitted in partial fulfillment of the requirements for the Master of Arts degree in
-		the Master of Arts in Computational Social Science\par}
+	{A paper submitted in partial fulfillment of the requirements for the Master of Arts degree in the Master of Arts in Computational Social Science\par}
 \end{titlepage}
 \newpage
 \tableofcontents
@@ -726,14 +722,13 @@ There are a few more aspects, particular to Science Studies, that were not able 
 
 \bibliographystyle{asr}
 
-
 \appendix
 \section{Appendix: Complete table of WOS Social Science subject tags}\label{app_tags}
 \begin{table}[H]
 	\centering
 	\rowcolors{2}{gray!25}{white}
 	\begin{adjustbox}{center}
-		\small
+		\footnotesize
 		\begin{tabular}{l|rr}
 			\toprule
 			\rowcolor{gray!50}
@@ -832,20 +827,22 @@ There are a few more aspects, particular to Science Studies, that were not able 
 	\includegraphics[width=\textwidth]{wc_Law}
 	\caption{Word cloud of Law publication's titles}
 \end{figure}
+\vspace{4cm}
 \section{Appendix: Word2Vec t-SNE}\label{appendix_tsne}
+
 \begin{figure}[H]
 	\centering
-	\includegraphics[height=\textheight]{tsne_psychologyneuroscience}
+	\includegraphics[height=.85\textheight]{tsne_psychologyneuroscience}
 	\caption{t-SNE layout of Tags from Psychology \& Neuroscience}
 \end{figure}
 \begin{figure}[H]
 	\centering
-	\includegraphics[height=\textheight]{tsne_economics}
+	\includegraphics[height=.85\textheight]{tsne_economics}
 	\caption{t-SNE layout of Tags from Economics}
 \end{figure}
 \begin{figure}[H]
 	\centering
-	\includegraphics[height=\textheight]{tsne_stack_overflow}
+	\includegraphics[height=.85\textheight]{tsne_stack_overflow}
 	\caption{t-SNE layout of Tags from Stack Overflow}
 \end{figure}
 \end{document}
